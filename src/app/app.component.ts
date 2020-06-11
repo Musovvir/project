@@ -12,6 +12,10 @@ export class AppComponent {
 
   constructor(private service: StoreTestService) { }
 
+  clicker = (item) => {
+    console.log(item)
+  }
+
   forHeader() {
     return this.service.forHeader;
   };

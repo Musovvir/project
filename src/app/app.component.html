@@ -1,4 +1,13 @@
-<s-viskhan-header [forHeader]='forHeader()'></s-viskhan-header>
+<s-viskhan-header [forHeader]='forHeader()'
+                  (clickHeaderImg)='clicker($event)'
+                  (clickHeaderWibbitz)='clicker($event)'
+                  (clickHeaderArticles)='clicker($event)'
+                  (clickHeaderEvents)='clicker($event)'
+                  (clickHeaderReports)='clicker($event)'
+                  (clickHeaderCustomerStories)='clicker($event)'
+                  (clickHeaderIcon)='clicker($event)'
+                  (clickHeaderInput)='clicker($event)'
+                  (clickHeaderButton)='clicker($event)'></s-viskhan-header>
   <router-outlet></router-outlet>
 <s-viskhan-footer [forFooter]='forFooter()'></s-viskhan-footer>
 <!--<div id="sum-result">-->
